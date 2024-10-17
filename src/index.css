@@ -5,3 +5,13 @@
 body {
     background-color: #F8F8F8;
 }
+
+.gradient-text-blue {
+    background-color: #f3ec78;
+    background-image: linear-gradient(123.3deg, #0073FF, #141BEA);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}

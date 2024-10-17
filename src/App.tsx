@@ -7,10 +7,10 @@ import Profile from './layout/Profile/Profile';
 function App() {
   return (
     <React.Fragment>
-      {/* <RegistrLogin></RegistrLogin> */}
+      <RegistrLogin></RegistrLogin>
       {/* <Registr></Registr> */}
       {/* <ListEmployees></ListEmployees> */}
-      <Profile></Profile>
+      {/* <Profile></Profile> */}
     </React.Fragment>
   );
 }

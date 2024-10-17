@@ -1,6 +1,6 @@
 import React from "react";
 import { InputWithIcon } from "../Inputs/InputWithIcon";
-import { ButtonField } from "../Buttons/ButtonField";
+import { ButtonFieldBlack } from "../Buttons/ButtonFieldBlack";
 
 const Navbar = () => {
     return (
@@ -12,10 +12,10 @@ const Navbar = () => {
                 <span>Кошелек</span>
                 <span>Профиль</span>
             </div>
-            <ButtonField bgColor="black">
+            <ButtonFieldBlack>
                 <img src="../../assets/ellipse.png"/>
                 <span>EQAo48...WrnNL</span>
-            </ButtonField>
+            </ButtonFieldBlack>
         </nav>
     );
 }

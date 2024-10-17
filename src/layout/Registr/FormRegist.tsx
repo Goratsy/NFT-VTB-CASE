@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Input } from "../../components/Inputs/Input";
-import { ButtonField } from "../../components/Buttons/ButtonField";
+import { ButtonFieldBlue } from "../../components/Buttons/ButtonFieldBlue";
+
 
 const FormRegistr = () => {
     return (
@@ -8,7 +9,7 @@ const FormRegistr = () => {
             <Input placeholder="Логин"/>
             <Input placeholder="Пароль"/>
             <Input placeholder="Повторите пароль"/>
-            <ButtonField bgColor="">Регистрация</ButtonField>
+            <ButtonFieldBlue>Регистрация</ButtonFieldBlue>
         </form>
     );
 }
