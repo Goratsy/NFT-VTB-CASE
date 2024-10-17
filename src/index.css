@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
 body {
     background-color: #F8F8F8;
 }

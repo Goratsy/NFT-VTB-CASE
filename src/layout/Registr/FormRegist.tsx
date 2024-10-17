@@ -1,15 +1,15 @@
 import React, { FC } from "react";
 import { Input } from "../../components/Inputs/Input";
-import { ButtonFieldBlue } from "../../components/Buttons/ButtonFieldBlue";
+import { ButtonFieldBlueRegistr } from "./ButtonFieldBlueRegistr";
 
 
 const FormRegistr = () => {
     return (
-        <form>
+        <form className="flex justify-center items-center gap-[14px] flex-col min-w-14 z-50 w-full px-5 md:mb-[240px] mb-[120px]">
             <Input placeholder="Логин"/>
             <Input placeholder="Пароль"/>
             <Input placeholder="Повторите пароль"/>
-            <ButtonFieldBlue>Регистрация</ButtonFieldBlue>
+            <ButtonFieldBlueRegistr>Регистрация</ButtonFieldBlueRegistr>
         </form>
     );
 }

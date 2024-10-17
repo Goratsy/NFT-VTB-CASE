@@ -7,8 +7,8 @@ import Profile from './layout/Profile/Profile';
 function App() {
   return (
     <React.Fragment>
-      <RegistrLogin></RegistrLogin>
-      {/* <Registr></Registr> */}
+      {/* <RegistrLogin></RegistrLogin> */}
+      <Registr></Registr>
       {/* <ListEmployees></ListEmployees> */}
       {/* <Profile></Profile> */}
     </React.Fragment>
