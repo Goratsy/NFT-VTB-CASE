@@ -1,5 +1,6 @@
 import React from "react";
 import { FiltersEmployees } from "./FiltersEmployees";
+const logoProfile = require('../../assets/Container.png')
 
 const TableEmployees = ({ listEmployees }: { listEmployees: string[][] }) => {
     return (
@@ -34,7 +35,10 @@ const TableEmployees = ({ listEmployees }: { listEmployees: string[][] }) => {
                 {listEmployees.map((array: Array<string>) => {
                     return (
                         <>
-                            <span className="whitespace-nowrap">{array[0]}</span>
+                            <span className="whitespace-nowrap">
+                                <img src={logoProfile} className="inline mr-2"></img>
+                                {array[0]}
+                            </span>
                             <span className="whitespace-nowrap text-[#1B1F3BA6]">{array[1]}</span>
                             <span className="whitespace-nowrap text-[#1B1F3BA6]">Дата {array[2]}</span>
                             <span className="whitespace-nowrap text-[#1B1F3BA6]">{array[3]}</span>
