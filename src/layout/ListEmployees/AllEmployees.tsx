@@ -6,7 +6,7 @@ import { listEmployees } from "../../testData/listEployees";
 const AllEmployees = () => {
     return (
         <>
-            <section>
+            <section className="z-40 relative p-5 bg-white mx-[30px] rounded-[50px]">
                 <FiltersEmployees></FiltersEmployees>
                 <TableEmployees listEmployees={listEmployees}></TableEmployees>    
             </section>
