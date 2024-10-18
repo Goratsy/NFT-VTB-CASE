@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 const iconSelect = require('../../assets/iconSelect.png');
 
-const Select = ({ listItems, ...proos }: { listItems: Array<string>, props?: object }) => {
+const Select = ({ listItems, ...props }: { listItems: Array<string>, props?: object }) => {
     return (
         <div className="relative flex items-center">
             <img src={iconSelect} alt="arrow" className="absolute right-2"></img>

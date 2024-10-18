@@ -9,8 +9,8 @@ function App() {
     <React.Fragment>
       {/* <RegistrLogin></RegistrLogin> */}
       {/* <Registr></Registr> */}
-      <ListEmployees></ListEmployees>
-      {/* <Profile></Profile> */}
+      {/* <ListEmployees></ListEmployees> */}
+      <Profile></Profile>
     </React.Fragment>
   );
 }

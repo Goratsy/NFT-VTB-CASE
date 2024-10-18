@@ -15,10 +15,10 @@ const Navbar = () => {
             <div className="max-w-[290px]">
                 <InputWithIcon placeholder="Поиск"></InputWithIcon>
             </div>
-            <div className="flex justify-between g-20 min-w-64 max-w-96 w-2/5">
-                <span className="cursor-pointer gradient-text-blue">Сотрудники</span> {/* Rewtite (import library <Link>) */}
-                <span className="cursor-pointer">Кошелек</span> {/* Rewtite */}
-                <span className="cursor-pointer">Профиль</span> {/* Rewtite */}
+            <div className="flex justify-between gap-4 min-w-64 max-w-96 w-2/5 mr-12">
+                <span className="text-xl cursor-pointer gradient-text-blue">Сотрудники</span> {/* Rewtite (import library <Link>) */}
+                <span className="text-xl cursor-pointer">Кошелек</span> {/* Rewtite */}
+                <span className="text-xl cursor-pointer">Профиль</span> {/* Rewtite */}
             </div>
             <ButtonFieldBlackNavbar>
                 <img src={logoUser}/> {/* Rewtite */}
