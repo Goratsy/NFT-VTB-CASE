@@ -5,7 +5,7 @@ const imageLogo = require('../../assets/image.png');
 
 const Profile = () => {
   return (
-    <div className='overflow-hidden w-full'>
+    <div className='relative w-full overflow-hidden'>
       <img src={imageLogo} alt="logoCompany" className="absolute w-[380px] h-auto -left-[192px] top-[40px]" />
       <img src={imageLogo} alt="logoCompany" className="absolute w-[840px] h-auto -right-[600px] top-[230px]" />
       <Navbar></Navbar>
