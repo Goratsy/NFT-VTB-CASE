@@ -3,6 +3,7 @@ import { InputWithIcon } from "./InputWithIcon";
 import { ButtonFieldBlack } from "../Buttons/ButtonFieldBlack";
 import { ButtonFieldBlackNavbar } from "./ButtonFieldBlackNavbar";
 import '../../index.css';
+import { Link } from "react-router-dom";
 
 const logoUser = require('../../assets/ellipse.png'); // Rewtite 
 const logoCite = require('../../assets/logo_0_1.png'); // Rewtite 
@@ -16,9 +17,9 @@ const Navbar = () => {
                 <InputWithIcon placeholder="Поиск"></InputWithIcon>
             </div>
             <div className="flex justify-between gap-4 min-w-64 max-w-96 w-2/5 mr-12">
-                <span className="text-xl cursor-pointer gradient-text-blue">Сотрудники</span> {/* Rewtite (import library <Link>) */}
-                <span className="text-xl cursor-pointer">Кошелек</span> {/* Rewtite */}
-                <span className="text-xl cursor-pointer">Профиль</span> {/* Rewtite */}
+                <Link to='/listemployees' className="text-xl cursor-pointer gradient-text-blue">Сотрудники</Link> {/* Rewtite (import library <Link>) */}
+                <Link to='/wallet' className="text-xl cursor-pointer">Кошелек</Link> {/* Rewtite */}
+                <Link to='/myprofile' className="text-xl cursor-pointer">Профиль</Link> {/* Rewtite */}
             </div>
             <ButtonFieldBlackNavbar>
                 <img src={logoUser}/> {/* Rewtite */}

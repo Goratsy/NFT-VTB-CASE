@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext, useEffect, useId } from 'react';
 import { Navbar } from '../../components/Navbar/Navbar';
 import CardProfile from './CardProfile';
+import { UserContext } from '../../App';
 const imageLogo = require('../../assets/image.png');
 
 const Profile = () => {

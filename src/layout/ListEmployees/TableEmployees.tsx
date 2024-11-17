@@ -50,25 +50,25 @@ const TableEmployees = ({ listEmployees }: { listEmployees: string[][] }) => {
                 <div className="relative overflow-y-auto min-w-96 w-full whitespace-nowrap">
                     <table className="table-auto mx-5 mb-5 w-full">
                         <thead className="text-left">
-                            <tr className="mb-6">
+                            <tr className="mb-6" key={Math.random()}>
                                 <th className="font-normal">ФИО</th>
                                 <th className="font-normal">Должность</th>
                                 <th className="font-normal">Дата найма</th>
-                                <th className="font-normal">Стек</th>
+                                <th className="font-normal">ID сотрудника</th>
                             </tr>
                         </thead>
                         <tbody>
                             {listEmployees.map((array: Array<string>) => {
                                 return (
                                     <>
-                                        <tr className="py-3">
-                                            <td className="py-3 pr-[50px]">
-                                                <img src={logoProfile} className="inline mr-2"></img>
+                                        <tr className="py-3" key={Math.random()}>
+                                            <td className="py-3 pr-[50px]" key={Math.random()}>
+                                                <img src={logoProfile} className="inline mr-2" key={Math.random()}></img>
                                                 {array[0]}
                                             </td>
-                                            <td className="py-3 pr-[50px] text-[#1B1F3BA6]">{array[1]}</td>
-                                            <td className="py-3 pr-[50px] text-[#1B1F3BA6]">Дата {array[2]}</td>
-                                            <td className="py-3 text-[#1B1F3BA6]">{array[3]}</td>
+                                            <td className="py-3 pr-[50px] text-[#1B1F3BA6]" key={Math.random()}>{array[1]}</td>
+                                            <td className="py-3 pr-[50px] text-[#1B1F3BA6]" key={Math.random()}>Дата {array[2]}</td>
+                                            <td className="py-3 text-[#1B1F3BA6]" key={Math.random()}>{array[3]}</td>
                                         </tr>
                                     </>
                                 );
